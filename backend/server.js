@@ -246,8 +246,8 @@ const BLOCKED_DISPOSABLE_DOMAINS = [
 ];
 
 const BLOCKED_PUBLIC_DOMAINS = [
-    'gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com', 'live.com',
-    'aol.com', 'icloud.com', 'protonmail.com', 'zoho.com', 'mail.com'
+    /*'gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com', 'live.com',
+    'aol.com', 'icloud.com', 'protonmail.com', 'zoho.com', 'mail.com'*/
 ];
 
 // ============================================
