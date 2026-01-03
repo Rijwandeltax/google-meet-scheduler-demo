@@ -105,7 +105,7 @@
         .meeting-info h2 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
         .meeting-info p { color: var(--gray-600); font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
 
-        .meeting-details { display: flex; flex-direction: column; gap: 16px; }
+        .meeting-details { display: flex; /*flex-direction: column;*/ gap: 16px; }
         .detail-item { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--gray-600); }
         .detail-item i { font-size: 18px; color: var(--primary); width: 24px; }
 
@@ -390,6 +390,59 @@
             .sidebar { border-right: none; border-bottom: 1px solid var(--gray-200); }
             .right-panel { border-left: none; border-top: 1px solid var(--gray-200); max-height: none; }
         }
+
+        .sidebar-section-title{
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            margin-top: 15px;
+        }
+        .about-text{
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .mini-stats{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .mini-stat{
+            text-align: center;
+            padding: 10px 6px;
+            background: var(--bg-main);
+            border-radius: 8px;
+        }
+        .mini-stat-number{
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .mini-stat-label{ 
+            font-size: 10px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .expertise-tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .expertise-tag{
+            font-size: 11px;
+            padding: 4px 10px;
+            background: #e8f0fe;
+            color: #1a73e8;
+            border-radius: 20px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -413,10 +466,42 @@
                     <div class="meeting-details">
                         <div class="detail-item"><i class="bi bi-clock"></i><span id="duration-text">45 min</span></div>
                         <div class="detail-item"><i class="bi bi-camera-video"></i><span>Google Meet</span></div>
-                        <div class="detail-item"><i class="bi bi-calendar3"></i><span id="booking-window">Up to 15 days ahead</span></div>
-                        <div class="detail-item"><i class="bi bi-envelope-check"></i><span>Email verification required</span></div>
+                        <!--<div class="detail-item"><i class="bi bi-calendar3"></i><span id="booking-window">Up to 15 days ahead</span></div>
+                        <div class="detail-item"><i class="bi bi-envelope-check"></i><span>Email verification required</span></div>-->
                     </div>
                 </div>
+
+                <!-- About Section -->
+            <div class="sidebar-section-title">About Himanshu</div>
+            <p class="about-text">
+                Salesforce Architect with 7+ years building scalable solutions. Specialized in integrations, CPQ, and custom app development.
+            </p>
+
+            <div class="mini-stats">
+                <div class="mini-stat">
+                    <div class="mini-stat-number">7+</div>
+                    <div class="mini-stat-label">Years</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="mini-stat-number">100+</div>
+                    <div class="mini-stat-label">Projects</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="mini-stat-number">10</div>
+                    <div class="mini-stat-label">Certs</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section-title">Expertise</div>
+            <div class="expertise-tags">
+                <span class="expertise-tag">Apex</span>
+                <span class="expertise-tag">LWC</span>
+                <span class="expertise-tag">CPQ</span>
+                <span class="expertise-tag">Integrations</span>
+                <span class="expertise-tag">Flows</span>
+                <span class="expertise-tag">Service Cloud</span>
+                <span class="expertise-tag">Experience Cloud</span>
+            </div>
             </div>
 
             <!-- Calendar -->
