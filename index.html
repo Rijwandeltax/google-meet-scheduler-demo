@@ -858,7 +858,7 @@
             if (!email.includes('@') || !email.includes('.')) { btn.disabled = true; return false; }
 
             const domain = email.split('@')[1];
-            const blocked = ['gmail.com','yahoo.com','outlook.com','hotmail.com','live.com','aol.com','icloud.com','protonmail.com'];
+            const blocked = [];
             if (blocked.includes(domain)) {
                 showEmailError('Please use your business email');
                 btn.disabled = true;
