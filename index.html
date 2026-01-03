@@ -106,8 +106,8 @@
         .meeting-info p { color: var(--gray-600); font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
 
         .meeting-details { display: flex; /*flex-direction: column;*/ gap: 16px; }
-        .detail-item { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--gray-600); }
-        .detail-item i { font-size: 18px; color: var(--primary); width: 24px; }
+        .detail-item { display: flex; align-items: center; gap: 12px; font-size: 11px; color: var(--gray-600); }
+        .detail-item i { font-size: 15px; color: var(--primary); width: 24px; }
 
         /* Calendar */
         .calendar-section { padding: 32px; }
@@ -453,16 +453,16 @@
                 <div class="brand">
                     <div class="brand-icon"><i class="bi bi-calendar-check"></i></div>
                     <div class="brand-text">
-                        <h1 id="owner-name">Your Name</h1><!-- Auto-filled from backend OWNER_NAME -->
+                        <h1 id="owner-name">Sachin Kumar</h1><!-- Auto-filled from backend OWNER_NAME -->
                         <!-- CHANGE: Subtitle text below your name -->
                         <span>Schedule a Meeting</span>
                     </div>
                 </div>
                 <div class="meeting-info">
                     <!-- CHANGE: Meeting type heading -->
-                    <h2>Consultation</h2>
+                    <div class="sidebar-section-title">Consultation</div>
                     <!-- CHANGE: Description text -->
-                    <p>Book a time slot that works for you. You'll receive a calendar invite with a Google Meet link.</p>
+                    <p class="about-text">Book a time slot that works for you. You'll receive a calendar invite with a Google Meet link.</p>
                     <div class="meeting-details">
                         <div class="detail-item"><i class="bi bi-clock"></i><span id="duration-text">45 min</span></div>
                         <div class="detail-item"><i class="bi bi-camera-video"></i><span>Google Meet</span></div>
